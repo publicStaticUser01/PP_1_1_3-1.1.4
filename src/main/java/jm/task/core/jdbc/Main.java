@@ -1,8 +1,5 @@
 package jm.task.core.jdbc;
 
-import jm.task.core.jdbc.dao.UserDao;
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
-import jm.task.core.jdbc.util.Util;
 import jm.task.core.jdbc.service.UserService;
 import jm.task.core.jdbc.service.UserServiceImpl;
 
@@ -11,10 +8,10 @@ public class Main {
     public static void main(String[] args) {
         userService.createUsersTable();
 
-        userService.saveUser("Vlad", "Ivanov", (byte) 34);
-        userService.saveUser("Andrew", "Kastrov", (byte) 15);
-        userService.saveUser("Oleg", "Zybenko", (byte) 29);
-        userService.saveUser("Dima", "Petrov", (byte) 145);
+        userService.saveUser("Name1", "LastName1", (byte) 20);
+        userService.saveUser("Name2", "LastName2", (byte) 25);
+        userService.saveUser("Name3", "LastName3", (byte) 31);
+        userService.saveUser("Name4", "LastName4", (byte) 38);
 
         userService.getAllUsers();
 
