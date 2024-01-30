@@ -2,21 +2,15 @@ package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
 
-import java.sql.Connection;
 import java.util.List;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import javax.persistence.criteria.CriteriaQuery;
 
 public class UserDaoHibernateImpl implements UserDao {
-    private Connection connection;
-    private SessionFactory sessionFactory;
     public UserDaoHibernateImpl() {
-        Util util = new Util();
-        connection = util.getConnection();
-        sessionFactory = util.getConnectionHibernate();
+
     }
 
 
